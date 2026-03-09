@@ -40,12 +40,21 @@ nav {
   display: flex;
   align-items: center;
   height: var(--nav-height);
+  padding: 0 1rem;
   border-bottom: 1px solid var(--border);
 }
 
 nav .nav-links {
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-sep {
+  color: var(--text-secondary);
+  font-weight: 300;
+  user-select: none;
+  padding: 0 0.5rem;
 }
 
 nav .nav-links a {
@@ -90,41 +99,25 @@ main {
   font-size: 0.85rem;
   font-weight: 300;
   color: var(--text-secondary);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   margin-top: 0.75rem;
 }
 
 .home-section .signature {
-  font-size: 1.05rem;
+  font-size: 1.25rem;
+  font-weight: 400;
   color: var(--text-secondary);
-  font-style: normal;
 }
 
 .home-section .focus {
   font-size: 0.85rem;
-  font-weight: 300;
   color: var(--text-secondary);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-top: 0.5rem;
 }
 
-.tech-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  list-style: none;
-}
-
-.tech-list li {
+.home-section .tech-inline {
   font-size: 0.85rem;
   font-weight: 300;
   color: var(--text-secondary);
-  letter-spacing: 0.03em;
-  padding: 0.2rem 0.65rem;
-  border: 1px solid var(--border);
-  border-radius: 3px;
+  margin-top: 0.35rem;
 }
 
 .links-list {
@@ -139,8 +132,6 @@ main {
   font-weight: 300;
   color: var(--text-secondary);
   text-decoration: none;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   border-bottom: 1px solid transparent;
   transition: color 0.2s, border-color 0.2s;
 }
@@ -163,7 +154,6 @@ main {
   font-size: 0.8rem;
   font-weight: 300;
   color: var(--text-secondary);
-  letter-spacing: 0.05em;
   font-variant-numeric: tabular-nums;
 }
 
@@ -202,7 +192,6 @@ main {
   font-size: 0.8rem;
   font-weight: 300;
   color: var(--text-secondary);
-  letter-spacing: 0.05em;
   margin-top: 0.5rem;
   display: block;
 }
