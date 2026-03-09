@@ -77,47 +77,64 @@ main {
   padding: 2rem 0 4rem;
 }
 
-/* ── Homepage sections ── */
-.home-section {
-  margin-bottom: 2.5rem;
+/* ── Homepage: identity ── */
+.home-identity {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
-.home-section h1 {
+.avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid #f0eee9;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.home-identity h1 {
   font-size: clamp(2rem, 1.2rem + 3.5vw, 3rem);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.03em;
 }
 
-.home-section .alias {
+.home-identity .alias {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  margin-top: 0.15rem;
+}
+
+.motto {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+
+/* ── Homepage: about ── */
+.home-about {
+  margin-bottom: 2.5rem;
+}
+
+.home-about p {
   font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.home-about .focus {
+  font-size: 0.85rem;
+  font-weight: 300;
   color: var(--text-secondary);
   margin-top: 0.3rem;
 }
 
-.home-section .subtitle {
-  font-size: 0.85rem;
-  font-weight: 300;
-  color: var(--text-secondary);
-  margin-top: 0.75rem;
-}
-
-.home-section .signature {
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--text-secondary);
-}
-
-.home-section .focus {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-}
-
-.home-section .tech-inline {
-  font-size: 0.85rem;
-  font-weight: 300;
-  color: var(--text-secondary);
-  margin-top: 0.35rem;
+/* ── Homepage: links ── */
+.home-links {
+  margin-bottom: 2rem;
 }
 
 .links-list {
