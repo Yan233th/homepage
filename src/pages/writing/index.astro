@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('writing')).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+---
+
+<Base title="Writing · Yan233_">
+  <div class="page-fade-in">
+    {posts.length === 0 ? (
+      <p class="empty-state">还没有文章。</p>
+    ) : (
+      <ul class="writing-list">
+        {posts.map((post) => (
+          <li>
+            <time datetime={post.data.date.toISOString().slice(0, 10)}>
+              {post.data.date.toISOString().slice(0, 10)}
+            </time>
+            <a href={`/writing/${post.id}`}>{post.data.title}</a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+</Base>

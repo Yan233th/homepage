@@ -1,0 +1,32 @@
+---
+import '../styles/global.css';
+import { ViewTransitions } from 'astro:transitions';
+
+interface Props {
+  title?: string;
+}
+
+const { title = 'Yan233_' } = Astro.props;
+const pathname = Astro.url.pathname;
+---
+
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <nav>
+      <a class="site-name" href="/">Yan233_</a>
+      <div class="nav-links">
+        <a href="/writing" class:list={[{ active: pathname.startsWith('/writing') }]}>writing</a>
+      </div>
+    </nav>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
