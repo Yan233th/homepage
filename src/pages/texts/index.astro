@@ -7,7 +7,7 @@ const posts = (await getCollection('writing')).sort(
 );
 ---
 
-<Base title="Writing · Yan233_" description="Writing by Yan233_">
+<Base title="Texts · Yan233_" description="Texts by Yan233_">
   <div class="page-fade-in">
     {posts.length === 0 ? (
       <p class="empty-state">Nothing here yet.</p>
@@ -18,7 +18,7 @@ const posts = (await getCollection('writing')).sort(
             <time datetime={post.data.date.toISOString().slice(0, 10)}>
               {post.data.date.toISOString().slice(0, 10)}
             </time>
-            <a href={`/writing/${post.id}`}>{post.data.title}</a>
+            <a href={`/texts/${post.id}`}>{post.data.title}</a>
           </li>
         ))}
       </ul>

@@ -11,8 +11,8 @@
 :root {
   --bg: #faf8f5;
   --text: #1b1b1b;
-  --text-secondary: #6b6b6b;
-  --accent: #8b6cc0;
+  --text-secondary: #555;
+  --accent: #6b4d9e;
   --border: #e0ddd8;
   --code-bg: #f0eee9;
   --max-width: 640px;

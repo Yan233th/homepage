@@ -25,7 +25,7 @@ const pathname = Astro.url.pathname;
       <div class="nav-links">
         <a href="/" class:list={[{ active: pathname === '/' }]}>~</a>
         <span class="nav-sep">&middot;</span>
-        <a href="/writing" class:list={[{ active: pathname.startsWith('/writing') }]}>texts</a>
+        <a href="/texts" class:list={[{ active: pathname.startsWith('/texts') }]}>texts</a>
       </div>
     </nav>
     <main>
