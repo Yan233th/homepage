@@ -4,9 +4,10 @@ import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
   title?: string;
+  description?: string;
 }
 
-const { title = 'Yan233_' } = Astro.props;
+const { title = 'Yan233_', description } = Astro.props;
 const pathname = Astro.url.pathname;
 ---
 
@@ -16,6 +17,7 @@ const pathname = Astro.url.pathname;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
+    {description && <meta name="description" content={description} />}
     <ViewTransitions />
   </head>
   <body>

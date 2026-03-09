@@ -7,10 +7,10 @@ const posts = (await getCollection('writing')).sort(
 );
 ---
 
-<Base title="Writing · Yan233_">
+<Base title="Writing · Yan233_" description="Writing by Yan233_">
   <div class="page-fade-in">
     {posts.length === 0 ? (
-      <p class="empty-state">还没有文章。</p>
+      <p class="empty-state">Nothing here yet.</p>
     ) : (
       <ul class="writing-list">
         {posts.map((post) => (

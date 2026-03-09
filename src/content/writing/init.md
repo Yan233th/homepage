@@ -9,7 +9,7 @@ $ site init
   creating /writing ....... done
   loading config .......... done
   resolving identity ...... Yan233_
-  setting locale .......... en
+  setting locale .......... en-US
 
   ✓ site is up.
 

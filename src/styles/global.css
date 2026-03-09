@@ -49,7 +49,7 @@ nav .nav-links {
 }
 
 nav .nav-links a {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 300;
   color: var(--text-secondary);
   text-decoration: none;
@@ -81,7 +81,7 @@ main {
 }
 
 .home-section .subtitle {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 300;
   color: var(--text-secondary);
   letter-spacing: 0.05em;
@@ -90,13 +90,13 @@ main {
 }
 
 .home-section .signature {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--text-secondary);
   font-style: normal;
 }
 
 .home-section .focus {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 300;
   color: var(--text-secondary);
   letter-spacing: 0.05em;
@@ -112,7 +112,7 @@ main {
 }
 
 .tech-list li {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 300;
   color: var(--text-secondary);
   letter-spacing: 0.03em;
@@ -128,7 +128,7 @@ main {
 }
 
 .links-list a {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 300;
   color: var(--text-secondary);
   text-decoration: none;
@@ -153,7 +153,7 @@ main {
 }
 
 .writing-list time {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 300;
   color: var(--text-secondary);
   letter-spacing: 0.05em;
@@ -162,7 +162,7 @@ main {
 
 .writing-list a {
   display: block;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 400;
   color: var(--text);
   text-decoration: none;
@@ -192,7 +192,7 @@ main {
 }
 
 .article-header time {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 300;
   color: var(--text-secondary);
   letter-spacing: 0.05em;
