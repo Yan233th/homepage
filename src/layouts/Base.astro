@@ -20,8 +20,8 @@ const pathname = Astro.url.pathname;
   </head>
   <body>
     <nav>
-      <a class="site-name" href="/">Yan233_</a>
       <div class="nav-links">
+        <a href="/" class:list={[{ active: pathname === '/' }]}>home</a>
         <a href="/writing" class:list={[{ active: pathname.startsWith('/writing') }]}>writing</a>
       </div>
     </nav>
