@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 
 interface Props {
   title?: string;
@@ -18,7 +18,7 @@ const pathname = Astro.url.pathname;
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body>
     <nav>
