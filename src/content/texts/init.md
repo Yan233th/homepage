@@ -6,7 +6,7 @@ date: 2026-03-09
 ```
 $ site init
 
-  creating /writing ....... done
+  creating /texts ......... done
   loading config .......... done
   resolving identity ...... Yan233_
   setting locale .......... en-US

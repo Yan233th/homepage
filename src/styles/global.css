@@ -193,23 +193,23 @@ main {
   border-bottom-color: var(--accent);
 }
 
-/* ── Writing list ── */
-.writing-list {
+/* ── Texts list ── */
+.texts-list {
   list-style: none;
 }
 
-.writing-list li {
+.texts-list li {
   margin-bottom: 1.25rem;
 }
 
-.writing-list time {
+.texts-list time {
   font-size: 0.8rem;
   font-weight: 300;
   color: var(--text-secondary);
   font-variant-numeric: tabular-nums;
 }
 
-.writing-list a {
+.texts-list a {
   display: block;
   font-size: 1.05rem;
   font-weight: 400;
@@ -218,7 +218,7 @@ main {
   transition: color 0.2s;
 }
 
-.writing-list a:hover {
+.texts-list a:hover {
   color: var(--accent);
 }
 
