@@ -266,9 +266,8 @@ main {
   list-style: none;
 }
 
-.links-list li + li::before {
-  content: "/";
-  margin: 0 0.38rem;
+.links-list .sep {
+  padding: 0 0.38rem;
   color: var(--text-tertiary);
   opacity: 0.6;
   font-weight: 300;
