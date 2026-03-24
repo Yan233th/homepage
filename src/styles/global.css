@@ -50,25 +50,10 @@ html {
 }
 
 body {
-  position: relative;
-  isolation: isolate;
   max-width: var(--max-width);
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 1.5rem;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  pointer-events: none;
-  background: var(--bg);
-}
-
-body::after {
-  content: none;
 }
 
 body,
@@ -87,12 +72,6 @@ a {
 img {
   display: block;
   max-width: 100%;
-}
-
-nav,
-main {
-  position: relative;
-  z-index: 1;
 }
 
 nav {
@@ -489,10 +468,6 @@ main {
 
   main {
     padding-top: 2.2rem;
-  }
-
-  .links-list {
-    gap: 0.4rem;
   }
 
   .texts-list li {
