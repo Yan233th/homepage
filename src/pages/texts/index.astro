@@ -8,7 +8,13 @@ const posts = (await getCollection('texts')).sort(
 ---
 
 <Base title="Texts · Yan233_" description="Texts by Yan233_">
-  <div class="page-fade-in">
+  <section class="texts-shell page-fade-in">
+    <header class="page-header">
+      <p class="page-kicker">Archive</p>
+      <h1>Texts</h1>
+      <p class="page-intro">Notes written when there is something worth keeping.</p>
+    </header>
+
     {posts.length === 0 ? (
       <p class="empty-state">Nothing here yet.</p>
     ) : (
@@ -23,5 +29,5 @@ const posts = (await getCollection('texts')).sort(
         ))}
       </ul>
     )}
-  </div>
+  </section>
 </Base>
