@@ -452,6 +452,23 @@ main {
   }
 }
 
+.fade-in {
+  opacity: 0;
+  animation: riseIn 0.5s ease forwards;
+}
+
+.delay-2 {
+  animation-delay: 0.1s;
+}
+
+.delay-3 {
+  animation-delay: 0.2s;
+}
+
+.delay-4 {
+  animation-delay: 0.3s;
+}
+
 .page-fade-in {
   animation: riseIn 0.38s ease both;
 }
@@ -501,6 +518,7 @@ main {
     transition-duration: 0.01ms !important;
   }
 
+  .fade-in,
   .page-fade-in {
     opacity: 1;
     transform: none;
