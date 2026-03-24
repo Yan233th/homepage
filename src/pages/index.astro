@@ -3,39 +3,45 @@ import Base from '../layouts/Base.astro';
 ---
 
 <Base description="Yan233_'s homepage">
-  <section class="home-identity fade-in delay-1">
-    <img src="/avatar.avif" alt="Yan233_" class="avatar" />
-    <div>
-      <h1>Yan233_</h1>
-      <p class="alias">Yan233th</p>
-    </div>
-  </section>
+  <section class="home-shell page-fade-in">
+    <section class="home-intro">
+      <div class="home-identity">
+        <img src="/avatar.avif" alt="Yan233_" class="avatar" />
+        <div>
+          <h1>Yan233_</h1>
+          <p class="alias">Yan233th</p>
+        </div>
+      </div>
 
-  <p class="motto fade-in delay-1">愿你的旅途满溢诅咒与祝福</p>
+      <p class="motto">愿你的旅途满溢诅咒与祝福</p>
 
-  <section class="home-about fade-in delay-2">
-    <p>CS undergrad · systems & infrastructure</p>
-    <p>tracing how systems structure, compose, and coordinate</p>
-    <p class="focus">protocols · interfaces · boundaries · mechanisms</p>
-  </section>
+      <div class="home-about">
+        <p class="home-lead">CS undergrad · systems &amp; infrastructure</p>
+        <p>tracing how systems structure, compose, and coordinate</p>
+        <p class="focus">protocols · interfaces · boundaries · mechanisms</p>
+      </div>
+    </section>
 
-  <section class="home-stack fade-in delay-3">
-    <ul class="tech-list">
-      <li>Rust</li>
-      <li>Unix</li>
-      <li>NixOS</li>
-      <li>Infra</li>
-      <li>ACG</li>
-    </ul>
-  </section>
+    <section class="home-panel">
+      <p class="section-label">Axes</p>
+      <ul class="tech-list">
+        <li>Rust</li>
+        <li>Unix</li>
+        <li>NixOS</li>
+        <li>Infra</li>
+        <li>ACG</li>
+      </ul>
+    </section>
 
-  <section class="home-links fade-in delay-4">
-    <ul class="links-list">
-      <li><a href="https://github.com/Yan233th" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="https://codeforces.com/profile/Yan233_" target="_blank" rel="noopener">Codeforces</a></li>
-      <li><a href="https://space.bilibili.com/180325614" target="_blank" rel="noopener">Bilibili</a></li>
-      <li><a href="https://bgm.tv/user/666340" target="_blank" rel="noopener">Bangumi</a></li>
-      <li><a href="https://steamcommunity.com/id/Yan233_" target="_blank" rel="noopener">Steam</a></li>
-    </ul>
+    <section class="home-panel">
+      <p class="section-label">Links</p>
+      <ul class="links-list">
+        <li><a href="https://github.com/Yan233th" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://codeforces.com/profile/Yan233_" target="_blank" rel="noopener">Codeforces</a></li>
+        <li><a href="https://space.bilibili.com/180325614" target="_blank" rel="noopener">Bilibili</a></li>
+        <li><a href="https://bgm.tv/user/666340" target="_blank" rel="noopener">Bangumi</a></li>
+        <li><a href="https://steamcommunity.com/id/Yan233_" target="_blank" rel="noopener">Steam</a></li>
+      </ul>
+    </section>
   </section>
 </Base>
