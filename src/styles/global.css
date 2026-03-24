@@ -80,6 +80,10 @@ select {
   color: inherit;
 }
 
+a {
+  transition: color 0.2s ease;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -121,7 +125,6 @@ nav .nav-links a {
   letter-spacing: 0.05em;
   text-decoration: none;
   text-transform: uppercase;
-  transition: color 0.2s ease;
 }
 
 nav .nav-links a:hover {
@@ -138,15 +141,7 @@ main {
   padding: 2.55rem 0 4.5rem;
 }
 
-.page-kicker {
-  color: var(--accent);
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
+.page-kicker,
 .section-label {
   color: var(--text-tertiary);
   font-family: var(--font-sans);
@@ -465,7 +460,6 @@ main {
 .prose a {
   color: var(--accent);
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .prose a:hover {
