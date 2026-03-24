@@ -22,21 +22,15 @@
   --code-bg: rgba(25, 33, 38, 0.05);
   --max-width: 680px;
   --nav-height: 4.1rem;
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", "Noto Sans SC",
-    "Noto Sans CJK SC", "Source Han Sans SC", "PingFang SC",
-    "Hiragino Sans GB", "Microsoft YaHei UI", sans-serif;
-  --font-serif: ui-serif, "New York", "Iowan Old Style",
-    "Palatino Linotype", "Book Antiqua", "Sitka Text", Cambria, Georgia,
-    "Noto Serif", "Noto Serif SC", "Noto Serif CJK SC",
-    "Source Han Serif SC", "Songti SC", "STSong", SimSun, serif;
-  --font-serif-cjk: "Noto Serif CJK SC", "Noto Serif SC",
-    "Source Han Serif SC", "Songti SC", "STSong", SimSun,
-    "PMingLiU", "MingLiU", serif;
-  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono",
-    "Cascadia Code", Consolas, Menlo, Monaco, "Ubuntu Mono",
-    "DejaVu Sans Mono", "Noto Sans Mono", "Roboto Mono",
-    "Droid Sans Mono", monospace;
+  --font-sans: "Avenir Next", system-ui, -apple-system, BlinkMacSystemFont,
+    "PingFang SC", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei UI",
+    Roboto, "Noto Sans CJK SC", sans-serif;
+  --font-serif: ui-serif, "New York", "Iowan Old Style", Georgia, Cambria,
+    "Noto Serif", "Noto Serif CJK SC", "Songti SC", serif;
+  --font-serif-cjk: "Songti SC", "STSong", "Noto Serif CJK SC",
+    "Source Han Serif SC", SimSun, serif;
+  --font-mono: "Cascadia Mono", "Cascadia Code", Consolas, "SF Mono", Menlo,
+    ui-monospace, Monaco, "Noto Sans Mono", monospace;
 }
 
 html {
