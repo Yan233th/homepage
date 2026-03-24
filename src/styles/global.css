@@ -13,7 +13,8 @@
   --text-secondary: #59646d;
   --text-tertiary: #74808a;
   --accent: #816187;
-  --accent-violet: #6d4f74;
+  --hover-accent: #6d4f74;
+  --hover-underline: rgba(109, 79, 116, 0.34);
   --nav-muted: rgba(25, 33, 38, 0.64);
   --nav-sep: rgba(25, 33, 38, 0.24);
   --border: rgba(25, 33, 38, 0.06);
@@ -124,7 +125,7 @@ nav .nav-links a {
 }
 
 nav .nav-links a:hover {
-  color: var(--accent-violet);
+  color: var(--hover-accent);
 }
 
 nav .nav-links a.active,
@@ -287,8 +288,8 @@ main {
 }
 
 .links-list a:hover {
-  color: var(--accent-violet);
-  border-bottom-color: rgba(109, 79, 116, 0.34);
+  color: var(--hover-accent);
+  border-bottom-color: var(--hover-underline);
 }
 
 .empty-state {
@@ -354,7 +355,7 @@ main {
 }
 
 .texts-list a:hover {
-  color: var(--accent-violet);
+  color: var(--hover-accent);
 }
 
 .article-shell {
@@ -468,7 +469,7 @@ main {
 }
 
 .prose a:hover {
-  color: var(--accent-violet);
+  color: var(--hover-accent);
 }
 
 @keyframes riseIn {
