@@ -12,8 +12,10 @@
   --text: #192126;
   --text-secondary: #59646d;
   --text-tertiary: #74808a;
-  --accent: #1f4b63;
-  --accent-violet: #625a7b;
+  --accent: #816187;
+  --accent-violet: #6d4f74;
+  --nav-muted: rgba(25, 33, 38, 0.44);
+  --nav-sep: rgba(25, 33, 38, 0.24);
   --border: rgba(25, 33, 38, 0.06);
   --border-strong: rgba(25, 33, 38, 0.12);
   --code-bg: rgba(25, 33, 38, 0.05);
@@ -103,7 +105,7 @@ nav .nav-links {
 
 .sep {
   padding: 0 0.45rem;
-  color: var(--text-tertiary);
+  color: var(--nav-sep);
   font-family: var(--font-sans);
   font-size: 0.8rem;
   font-weight: 300;
@@ -112,7 +114,7 @@ nav .nav-links {
 
 nav .nav-links a {
   padding: 0.2rem 0;
-  color: var(--text-secondary);
+  color: var(--nav-muted);
   font-family: var(--font-sans);
   font-size: 0.82rem;
   font-weight: 300;
@@ -122,9 +124,13 @@ nav .nav-links a {
   transition: color 0.2s ease;
 }
 
-nav .nav-links a:hover,
-nav .nav-links a.active {
+nav .nav-links a:hover {
   color: var(--accent-violet);
+}
+
+nav .nav-links a.active,
+nav .nav-links a.active:hover {
+  color: var(--text);
 }
 
 main {
@@ -141,7 +147,7 @@ main {
 }
 
 .section-label {
-  color: rgba(98, 90, 123, 0.72);
+  color: var(--text-tertiary);
   font-family: var(--font-sans);
   font-size: 0.68rem;
   font-weight: 300;
@@ -245,7 +251,7 @@ main {
   padding: 0.28rem 0.72rem;
   border: none;
   border-radius: 999px;
-  background: rgba(31, 75, 99, 0.06);
+  background: rgba(129, 97, 135, 0.09);
   color: var(--text-secondary);
   font-family: var(--font-sans);
   font-size: 0.78rem;
@@ -286,7 +292,7 @@ main {
 }
 
 .links-list a:hover {
-  color: var(--accent);
+  color: var(--accent-violet);
 }
 
 .empty-state {
@@ -352,7 +358,7 @@ main {
 }
 
 .texts-list a:hover {
-  color: var(--accent);
+  color: var(--accent-violet);
 }
 
 .article-shell {
@@ -466,7 +472,7 @@ main {
 }
 
 .prose a:hover {
-  color: #16384b;
+  color: var(--accent-violet);
 }
 
 @keyframes riseIn {
