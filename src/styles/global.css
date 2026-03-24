@@ -15,6 +15,7 @@
   --accent: #816187;
   --hover-accent: #6d4f74;
   --hover-underline: rgba(109, 79, 116, 0.34);
+  --nav-active: #111111;
   --nav-muted: rgba(25, 33, 38, 0.82);
   --nav-sep: rgba(25, 33, 38, 0.38);
   --border: rgba(25, 33, 38, 0.06);
@@ -106,8 +107,8 @@ nav .nav-links a:hover {
 
 nav .nav-links a.active,
 nav .nav-links a.active:hover {
-  color: var(--text);
-  font-weight: 400;
+  color: var(--nav-active);
+  font-weight: 500;
 }
 
 main {
