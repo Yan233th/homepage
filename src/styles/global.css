@@ -10,13 +10,13 @@
 :root {
   --bg: #faf8f5;
   --text: #192126;
-  --text-secondary: #59646d;
-  --text-tertiary: #74808a;
+  --text-secondary: #434d56;
+  --text-tertiary: #57636d;
   --accent: #816187;
   --hover-accent: #6d4f74;
   --hover-underline: rgba(109, 79, 116, 0.34);
-  --nav-muted: rgba(25, 33, 38, 0.64);
-  --nav-sep: rgba(25, 33, 38, 0.24);
+  --nav-muted: rgba(25, 33, 38, 0.82);
+  --nav-sep: rgba(25, 33, 38, 0.38);
   --border: rgba(25, 33, 38, 0.06);
   --border-strong: rgba(25, 33, 38, 0.12);
   --code-bg: rgba(25, 33, 38, 0.05);
