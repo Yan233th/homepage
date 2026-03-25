@@ -269,13 +269,6 @@ main {
 .page-header {
   display: grid;
   gap: 0.75rem;
-  margin-bottom: 2.2rem;
-  padding-bottom: 1rem;
-}
-
-.section-stack > .page-header {
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .page-header h1 {
