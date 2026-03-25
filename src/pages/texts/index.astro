@@ -8,17 +8,17 @@ const posts = (await getCollection('texts')).sort(
 ---
 
 <Base title="Texts · Yan233_" description="Texts by Yan233_">
-  <section class="texts-shell page-fade-in">
-    <header class="page-header">
+  <section class="texts-shell section-stack">
+    <header class="page-header fade-in">
       <p class="page-kicker">Archive</p>
       <h1>Texts</h1>
       <p class="page-intro">Fragments of what remains.</p>
     </header>
 
     {posts.length === 0 ? (
-      <p class="empty-state">Nothing here yet.</p>
+      <p class="empty-state fade-in delay-2">Nothing here yet.</p>
     ) : (
-      <ul class="texts-list">
+      <ul class="texts-list fade-in delay-2">
         {posts.map((post) => (
           <li>
             <time datetime={post.data.date.toISOString().slice(0, 10)}>

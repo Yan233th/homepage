@@ -125,12 +125,12 @@ main {
   text-transform: uppercase;
 }
 
-.home-shell {
+.section-stack {
   display: grid;
   gap: 1.35rem;
 }
 
-.home-shell > * + * {
+.section-stack > * + * {
   padding-top: 1.15rem;
   border-top: 1px solid var(--border);
 }
@@ -271,6 +271,11 @@ main {
   gap: 0.75rem;
   margin-bottom: 2.2rem;
   padding-bottom: 1rem;
+}
+
+.section-stack > .page-header {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .page-header h1 {
