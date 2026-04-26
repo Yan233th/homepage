@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import { formatTextTimestamp } from '../../lib/datetime';
 
 const posts = (await getCollection('texts')).sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()
@@ -21,8 +22,8 @@ const posts = (await getCollection('texts')).sort(
       <ul class="texts-list fade-in delay-2">
         {posts.map((post) => (
           <li>
-            <time datetime={post.data.date.toISOString().slice(0, 10)}>
-              {post.data.date.toISOString().slice(0, 10)}
+            <time datetime={post.data.date.toISOString()}>
+              {formatTextTimestamp(post.data.date)}
             </time>
             <a href={`/texts/${post.id}`}>{post.data.title}</a>
           </li>
