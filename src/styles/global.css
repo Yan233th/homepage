@@ -11,12 +11,12 @@
   --bg: #faf8f5;
   --text: #192126;
   --text-secondary: #434d56;
-  --text-tertiary: #57636d;
+  --text-tertiary: #656f78;
   --accent: #816187;
   --hover-accent: #6d4f74;
   --hover-underline: rgba(109, 79, 116, 0.34);
   --nav-active: #111111;
-  --nav-muted: rgba(25, 33, 38, 0.82);
+  --nav-muted: rgba(25, 33, 38, 0.75);
   --nav-sep: rgba(25, 33, 38, 0.38);
   --border: rgba(25, 33, 38, 0.06);
   --border-strong: rgba(25, 33, 38, 0.12);
@@ -86,7 +86,7 @@ nav .nav-links {
 .sep {
   padding: 0 0.5rem;
   color: var(--nav-sep);
-  font-weight: 300;
+  font-weight: 400;
   user-select: none;
 }
 
@@ -95,7 +95,7 @@ nav .nav-links a {
   color: var(--nav-muted);
   font-family: var(--font-sans);
   font-size: 0.89rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.05em;
   text-decoration: none;
   text-transform: uppercase;
@@ -120,7 +120,7 @@ main {
   color: var(--text-tertiary);
   font-family: var(--font-sans);
   font-size: 0.68rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -171,7 +171,7 @@ main {
   color: var(--text-tertiary);
   font-family: var(--font-sans);
   font-size: 0.78rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.01em;
   text-transform: none;
 }
@@ -202,7 +202,7 @@ main {
 .home-about .focus {
   color: var(--text-tertiary);
   font-size: 0.88rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .home-panel {
@@ -221,11 +221,11 @@ main {
   padding: 0.28rem 0.72rem;
   border: none;
   border-radius: 999px;
-  background: rgba(129, 97, 135, 0.09);
+  background: rgba(129, 97, 135, 0.08);
   color: var(--text-secondary);
   font-family: var(--font-sans);
   font-size: 0.78rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.02em;
 }
 
@@ -240,8 +240,8 @@ main {
 .links-list .sep {
   padding: 0 0.46rem;
   color: var(--text-tertiary);
-  opacity: 0.6;
-  font-weight: 300;
+  opacity: 0.5;
+  font-weight: 400;
   user-select: none;
 }
 
@@ -249,7 +249,7 @@ main {
   color: var(--text-secondary);
   font-family: var(--font-sans);
   font-size: 0.87rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.055em;
   text-decoration: none;
   border-bottom: 1px solid transparent;
