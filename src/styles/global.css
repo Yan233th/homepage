@@ -77,17 +77,20 @@ nav {
   border-bottom: 1px solid var(--border-strong);
 }
 
-nav .nav-links {
+nav .nav-links,
+nav .nav-links li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.sep {
+nav .nav-links li:not(:last-child)::after {
+  content: "·";
+  /* Empty alternative text, so screen readers pass over the separator;
+     browsers that don't know this form keep the line above. */
+  content: "·" / "";
   padding: 0 0.5rem;
   color: var(--nav-sep);
-  font-weight: 400;
-  user-select: none;
 }
 
 nav .nav-links a {
@@ -238,12 +241,13 @@ main {
   list-style: none;
 }
 
-.links-list .sep {
+.links-list li:not(:last-child)::after {
+  content: "/";
+  /* As in the nav. */
+  content: "/" / "";
   padding: 0 0.46rem;
   color: var(--text-tertiary);
   opacity: 0.5;
-  font-weight: 400;
-  user-select: none;
 }
 
 .links-list a {
