@@ -130,7 +130,7 @@ nav .nav-links a {
   padding: 0.2rem 0;
   color: var(--nav-muted);
   font-family: var(--font-sans);
-  font-size: 0.89rem;
+  font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.05em;
   text-decoration: none;
@@ -238,9 +238,9 @@ main {
 .links-list a {
   color: var(--text-secondary);
   font-family: var(--font-sans);
-  font-size: 0.87rem;
+  font-size: 0.875rem;
   font-weight: 400;
-  letter-spacing: 0.055em;
+  letter-spacing: 0.05em;
   text-decoration: none;
 }
 
