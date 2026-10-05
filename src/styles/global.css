@@ -7,20 +7,26 @@
   box-sizing: border-box;
 }
 
+/* Two colours make the page: ink on paper, every grey a strength of the ink.
+   At night the two trade places. */
 :root {
-  --bg: #faf8f5;
-  --text: #192126;
-  --text-secondary: #434d56;
-  --text-tertiary: #656f78;
+  --ink: 25 33 38;
+  --paper: 250 248 245;
+  --bg: rgb(var(--paper));
+  --text: rgb(var(--ink));
+  --text-secondary: rgb(var(--ink) / 0.8);
+  --text-tertiary: rgb(var(--ink) / 0.63);
+  /* Besides the two, the site's purple: for links, and for a link being
+     pointed at. Lighter at night. */
   --accent: #816187;
   --hover-accent: #6d4f74;
   --hover-underline: rgba(109, 79, 116, 0.34);
-  --nav-active: #111111;
-  --nav-muted: rgba(25, 33, 38, 0.75);
-  --nav-sep: rgba(25, 33, 38, 0.38);
-  --border: rgba(25, 33, 38, 0.06);
-  --border-strong: rgba(25, 33, 38, 0.12);
-  --code-bg: rgba(25, 33, 38, 0.05);
+  --nav-active: var(--text);
+  --nav-muted: rgb(var(--ink) / 0.75);
+  --nav-sep: rgb(var(--ink) / 0.38);
+  --border: rgb(var(--ink) / 0.06);
+  --border-strong: rgb(var(--ink) / 0.12);
+  --code-bg: rgb(var(--ink) / 0.05);
   --max-width: 680px;
   --nav-height: 4.1rem;
   --font-sans: "Avenir Next", system-ui, -apple-system, BlinkMacSystemFont,
@@ -34,7 +40,18 @@
     ui-monospace, Monaco, "Noto Sans Mono", monospace;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: 250 248 245;
+    --paper: 25 33 38;
+    --accent: #b9a1be;
+    --hover-accent: #cdb9d1;
+    --hover-underline: rgba(205, 185, 209, 0.34);
+  }
+}
+
 html {
+  color-scheme: light dark;
   font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.7;
@@ -62,6 +79,22 @@ select {
 
 a {
   transition: color 0.2s ease;
+}
+
+/* A link being pointed at has its underline drawn in from the left, and away
+   to the right when the pointer leaves. */
+nav .nav-links a,
+.links-list a,
+.texts-list a {
+  background: linear-gradient(var(--hover-underline) 0 0) right bottom / 0 1px no-repeat;
+  transition: color 0.2s ease, background-size 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+nav .nav-links a:hover,
+.links-list a:hover,
+.texts-list a:hover {
+  background-position: left bottom;
+  background-size: 100% 1px;
 }
 
 img {
@@ -156,8 +189,6 @@ main {
   border: 1px solid var(--border);
   border-radius: 50%;
   object-fit: cover;
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 10px 24px rgba(25, 33, 38, 0.04);
 }
 
 .home-identity h1 {
@@ -211,13 +242,10 @@ main {
   font-weight: 400;
   letter-spacing: 0.055em;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .links-list a:hover {
   color: var(--hover-accent);
-  border-bottom-color: var(--hover-underline);
 }
 
 .empty-state {
@@ -272,6 +300,8 @@ main {
 
 .texts-list a {
   display: block;
+  /* As wide as the title, so its underline is too. */
+  justify-self: start;
   color: var(--text);
   font-family: var(--font-serif);
   font-size: 1.28rem;
@@ -362,8 +392,7 @@ main {
   padding: 1rem 1.1rem;
   overflow-x: auto;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.66);
-  box-shadow: 0 10px 24px rgba(25, 33, 38, 0.04);
+  background: var(--code-bg);
   line-height: 1.6;
 }
 
